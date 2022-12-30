@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".SearchPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkerblue"
+        android:padding="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/goback"
+            android:onClick="GoBack"/>
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_weight="3"
+           android:gravity="center_vertical"
+           android:background="@drawable/search_bar"
+           android:layout_height="wrap_content">
+
+           <EditText
+               android:id="@+id/searchET"
+               android:layout_width="0dp"
+               android:layout_weight="3"
+               android:background="@color/lightgray"
+               android:layout_height="wrap_content"
+               android:textColorHint="@color/darkgray"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+               android:textStyle="bold"
+               android:inputType="textAutoComplete"
+               android:fontFamily="@font/robotoslab_regular"
+               android:hint="@string/search"/>
+
+           <ImageView
+               android:id="@+id/search_bar"
+               android:scaleType="fitEnd"
+               android:layout_gravity="center_vertical"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:src="@drawable/search_icon_black"
+               android:onClick="Search"/>
+       </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/SV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

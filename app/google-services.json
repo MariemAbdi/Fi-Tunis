@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "165421231784",
+    "project_id": "fi-tunis",
+    "storage_bucket": "fi-tunis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165421231784:android:ddc522bc958d66ee0a5c9d",
+        "android_client_info": {
+          "package_name": "com.example.fi_tunis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "165421231784-eij0i57te49g2lvi9up290q39284928b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDioFrXwTWY9CEvmbX138Ni6BnfkEG2_OQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "165421231784-eij0i57te49g2lvi9up290q39284928b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
